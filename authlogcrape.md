@@ -1,3 +1,5 @@
+# This is mostly for me - a paste of commands that i've had to write from scratch more than once
+
 #List all attempted usernames that failed to login from /var/log/auth.log  
 cat /var/log/auth.log | sed -n 's/.*for invalid user//p' | awk '{print $1;}' | uniq
   
